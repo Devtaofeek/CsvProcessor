@@ -15,6 +15,16 @@ namespace CsvProcessor.Controllers
             var processor = new Processor();
          
             return Ok(await processor.Process(filestream));
-            }
         }
+
+        [HttpPost(nameof(ProducTemplate))]
+        public async Task<IActionResult> ProducTemplate(IFormFile file)
+        {
+           
+
+            return Ok();
+        }
+    }
+
+
     }
